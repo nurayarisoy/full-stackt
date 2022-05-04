@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap</title>
+    <style>
+      body {
+        padding: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, Clarusway!</h1>
+
+    <button
+      type="button"
+      class="btn- btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#modal1"
+    >
+      Modal Button
+    </button>
+
+    <div class="modal fade" data-bs-backdrop="static" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Modal body is here</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <button
+      type="button"
+      class="btn- btn-secondary"
+      data-bs-toggle="modal"
+      data-bs-target="#modal2"
+    >
+      Modal Button
+    </button>
+
+    <div class="modal fade" data-bs-backdrop="static" id="modal2">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal Title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Modal body is here</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              blanditiis beatae neque nesciunt nulla saepe voluptates ex autem
+              consequatur doloribus temporibus eveniet dolor molestias
+              repellendus accusantium, explicabo obcaecati quibusdam,
+              repudiandae sunt, tempora maiores veniam cupiditate expedita! Rem
+              animi numquam itaque omnis sint quos consectetur impedit
+              voluptatem, harum voluptatibus, eius quasi ex quaerat odio
+              suscipit, consequuntur non nemo necessitatibus voluptate
+              architecto. Soluta sapiente tenetur, ipsa impedit vitae eveniet
+              provident ad aliquam natus assumenda exercitationem sint, vero
+              libero, esse maiores quae dolorum minima numquam accusamus
+              voluptas suscipit fuga inventore ea consectetur. Ab iure,
+              exercitationem eligendi quaerat quam voluptas doloremque ratione
+              quibusdam iste.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              blanditiis beatae neque nesciunt nulla saepe voluptates ex autem
+              consequatur doloribus temporibus eveniet dolor molestias
+              repellendus accusantium, explicabo obcaecati quibusdam,
+              repudiandae sunt, tempora maiores veniam cupiditate expedita! Rem
+              animi numquam itaque omnis sint quos consectetur impedit
+              voluptatem, harum voluptatibus, eius quasi ex quaerat odio
+              suscipit, consequuntur non nemo necessitatibus voluptate
+              architecto. Soluta sapiente tenetur, ipsa impedit vitae eveniet
+              provident ad aliquam natus assumenda exercitationem sint, vero
+              libero, esse maiores quae dolorum minima numquam accusamus
+              voluptas suscipit fuga inventore ea consectetur. Ab iure,
+              exercitationem eligendi quaerat quam voluptas doloremque ratione
+              quibusdam iste.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              blanditiis beatae neque nesciunt nulla saepe voluptates ex autem
+              consequatur doloribus temporibus eveniet dolor molestias
+              repellendus accusantium, explicabo obcaecati quibusdam,
+              repudiandae sunt, tempora maiores veniam cupiditate expedita! Rem
+              animi numquam itaque omnis sint quos consectetur impedit
+              voluptatem, harum voluptatibus, eius quasi ex quaerat odio
+              suscipit, consequuntur non nemo necessitatibus voluptate
+              architecto. Soluta sapiente tenetur, ipsa impedit vitae eveniet
+              provident ad aliquam natus assumenda exercitationem sint, vero
+              libero, esse maiores quae dolorum minima numquam accusamus
+              voluptas suscipit fuga inventore ea consectetur. Ab iure,
+              exercitationem eligendi quaerat quam voluptas doloremque ratione
+              quibusdam iste.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <button
+      type="button"
+      class="btn btn-info"
+      data-bs-target="#modal4"
+      data-bs-toggle="modal"
+    >
+      Form Input Modal
+    </button>
+
+    <div class="modal fade" data-bs-backdrop="static" id="modal4">
+      <div class="modal-dialog modal-xl">
+        <!-- size için modal-sm, lg  EKLE -->
+        <div class="modal-content">
+          <!-- card da olduğu gibi    -->
+          <div class="modal-header">
+            <h5 class="modal-title">Enter with email</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-3">
+                <label for="Email" class="col-form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="col-form-label">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.nav{
+    .menu-nav{
+        text-align:right;
+
+        &__item{
+            display:inline;
+            padding-right:1rem;
+
+            &.active>a{
+                color:$secondary-color; 
+            }
+        }
+
+        &__link{
+            font-size:1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            @include transition-ease;
+
+            &:hover{
+                color:rgb(20, 106, 206);
+            }
+        }
+
+}
+}

@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  user-select: none;
+  height: 100%;
+  background-image: linear-gradient(to right, #f4d160, #fbeeac);
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+{% extends 'fscohort/base.html' %} {% block content %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h2>Student Detail</h2>
+<div class="card">
+    <img src="{{student.image.url}}" alt="student picture" style="width:100%">
+    <h2>{{student.first_name}} {{student.last_name}}</h2>
+    <p class="title">Student</p>
+    <p>Clarusway</p>
+    <p>{{student.email}}</p>
+    <p>{{student.phone}}</p>
+    <p>{{student.number}}</p>
+    <a href="#"><i class="fa fa-dribbble"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <p><button>Contact</button></p>
+</div>
+<br>
+<br>
+<br>
+<div>
+    <img src="{{student.image.url}}" alt="" />
+</div>
+<div>{{student.first_name}}</div>
+<div>{{student.last_name}}</div>
+<div>{{student.email}}</div>
+<div>{{student.phone}}</div>
+<div>{{student.number}}</div>
+
+<div>
+    <a href="{% url 'update' student.id %}">Edit</a>
+    <a href="{% url 'delete' student.id %}">Delete</a>
+</div>
+
+{% endblock content %}

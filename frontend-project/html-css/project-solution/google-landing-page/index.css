@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+body{
+    width: 100%;
+    overflow-x: scroll;
+}
+/* -------HEADER-------- */
+
+.header{
+  padding:15px 15px 0 15px;  
+  cursor: pointer;
+}
+.header__left{
+    margin:0.5rem;
+    float:left;
+}
+.header__right{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    display:inline-block;
+}
+ul a{
+    color:black;
+    opacity:0.8;
+    padding: 0.5rem;
+   
+}
+a:hover{
+    text-decoration: underline;
+}
+.header__right--appicon{
+    vertical-align: middle;
+    opacity:0.7;
+}
+.header__right--appicon:hover{
+    opacity:1;
+}
+.header__right--button{
+    background-color:#4285F4;
+    border:none;
+    height: 30px;
+    width: 70px;
+    border-radius:2px;
+    color:white;
+    font-weight: bold;
+}
+.header__right--button:hover{
+    box-shadow:rgb(211,211,211) 3px 3px 5px 0;
+}
+
+/* -------------MAIN-------------- */
+
+.main__logo{
+width: 272px;
+height: 95px;
+margin:200px auto 0;
+display:block;
+}
+.main__search-bar{
+    width:460px;
+    height: 38px;
+    border:1px solid #D3D3D3;
+    border-radius: 25px;
+    margin:28px auto;
+}
+.main__search-bar:hover{
+    box-shadow: rgb(211,211,211) 3px 3px 5px 0;;
+}
+.main__search-bar--magnifier{
+    width:30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px; 
+}
+.main__search-bar--input{
+    width: 380px;
+    height: 28px;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+.main__search-bar--microphone{
+    width: 15px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.main__buttons{
+    text-align: center;
+}
+.main__button--left,
+.main__button--right{
+    height: 36px;
+    border:none;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    padding:0 16px;
+    margin:11px 4px;
+}
+.main__button--left:hover,
+.main__button--right:hover{
+    border:1px solid #D3D3D3;
+    cursor: pointer;
+}
+.main__language{
+    text-align: center;
+}
+.main__language a{
+    color:#000080;
+}
+
+/* --------------FOOTER----------- */
+.footer{
+    bottom:0;
+    position:fixed;
+    background-color: #F2F2F2;
+    line-height: 40px;
+    width: 100%;
+    color:#5F6368;
+}
+.footer__country{
+    padding-left:18px;
+    font-size: 14px;
+}
+.footer__bottom{
+    border-top:1px solid #DADCE0;
+}
+.footer__bottom--left{
+    float: left;
+    padding-left:18px;
+}
+.footer__bottom--right{
+    float: right;
+}

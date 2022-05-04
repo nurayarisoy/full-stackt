@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="box">
+        <div class="heading_container">
+          <h2>
+            <span>About Our School</span>
+          </h2>
+        </div>
+        <div class="img-box">
+          <img src= "{% static 'images/about-img.png' %}" alt="">
+        </div>
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+            </p>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <div class="footer_bg">
+
+    <!-- contact section -->
+
+
+    <!-- end contact section -->
+
+    <!-- info section -->
+
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <div class="footer_bg">
+  {% endblock content %}

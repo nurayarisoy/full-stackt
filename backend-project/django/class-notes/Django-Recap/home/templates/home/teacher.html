@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- end header section -->
+
+  <!-- teacher section -->
+  <section class="teacher_section ">
+    <div class="container">
+      <div class="heading_container">
+        <h2 class="">
+          Our Teachers
+        </h2>
+      </div>
+
+
+
+      <div class="teacher_container layout_padding2">
+        <div class="row">
+
+          {% for teacher in teachers  %}
+          <div class="col-md-3 col-sm-6">
+            <div class="box">
+              <div class="img-box">
+                <img class="" src="{{teacher.image.url}}"  alt="Card image cap">
+              </div>
+              <div class="detail-box">
+                <p>
+                  <h4>
+                    {{teacher.first_name}} {{teacher.last_name}}
+                  </h4>
+                  <h5>
+                    {{teacher.branch}} - {{teacher.email_teacher}}
+                  </h5>
+      
+                </p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+
+        </div>
+      </div>
+
+
+
+
+      <div class="btn-box">
+        <a href="">
+          See More
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="footer_bg">
+  <!-- teacher section -->
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+.menu-container {
+  height: 40rem;
+  width: 25rem;
+  background-color: #f48b29;
+  margin: 0 auto 0 auto;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-areas: "top" "bottom";
+  overflow: hidden;
+}
+
+.top-img {
+  width: 300px;
+  margin: 2rem;
+}
+
+.bars {
+  height: 40rem;
+  width: 5rem;
+  background-color: #53c1de;
+  position: relative;
+  z-index: 0;
+  transform: rotate(-45deg);
+  top: -40rem;
+  left: 10rem;
+}
+
+.top {
+  grid-area: top;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+.bottom {
+  grid-area: bottom;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  z-index: 1;
+}

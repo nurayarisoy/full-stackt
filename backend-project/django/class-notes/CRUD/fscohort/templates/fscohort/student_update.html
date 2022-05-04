@@ -1,0 +1,14 @@
+{% extends 'fscohort/base.html' %}
+
+
+{% block content %}
+    <form action="" method="POST">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="update">
+    </form>
+    <a href="{% url 'list' %}">
+        <button>Cancel</button>
+    </a>
+{% endblock content %}
+    
